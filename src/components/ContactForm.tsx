@@ -12,8 +12,8 @@ interface FormInputs {
   message: string;
 }
 
-const TELEGRAM_BOT_TOKEN = '8071292054:AAEGHEEvY-hQegCrWgX1YypqH6x3tpugM78';
-const TELEGRAM_CHAT_ID = '6443035959';
+const TELEGRAM_BOT_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
+const TELEGRAM_CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID;
 
 const FormInput = ({ label, error, ...props }: any) => (
   <div className="relative w-full mb-6">
