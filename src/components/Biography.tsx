@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { CodeBracketIcon, CommandLineIcon, PaintBrushIcon } from '@heroicons/react/24/outline';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaPhp, FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiTailwindcss } from 'react-icons/si';
+import { CodeBracketIcon, CommandLineIcon, SparklesIcon } from '@heroicons/react/24/outline';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaPhp, FaGithub, FaLinkedin, FaRobot } from 'react-icons/fa';
+import { SiTailwindcss, SiOpenai } from 'react-icons/si';
 import { useLanguage } from '../context/LanguageContext';
 
 const Biography = () => {
@@ -13,6 +13,16 @@ const Biography = () => {
   });
 
   const skills = [
+    {
+      icon: SparklesIcon,
+      title: t('biography.skills.aiServices'),
+      technologies: [
+        { name: "LLM Integration", icon: SiOpenai, color: "text-green-500" },
+        { name: "AI Assistants", icon: FaRobot, color: "text-purple-500" },
+        { name: "Chatbots", icon: FaRobot, color: "text-blue-500" },
+        { name: "AI Automation", icon: SparklesIcon, color: "text-pink-500" }
+      ]
+    },
     {
       icon: CodeBracketIcon,
       title: t('biography.skills.webDev'),
@@ -30,14 +40,6 @@ const Biography = () => {
       technologies: [
         { name: "Python", icon: FaPython, color: "text-blue-500" },
         { name: "PHP", icon: FaPhp, color: "text-indigo-500" }
-      ]
-    },
-    {
-      icon: PaintBrushIcon,
-      title: t('biography.skills.uiux'),
-      technologies: [
-        { name: t('biography.skills.webDesign'), icon: CodeBracketIcon, color: "text-pink-500" },
-        { name: t('biography.skills.userExperience'), icon: PaintBrushIcon, color: "text-purple-500" }
       ]
     }
   ];

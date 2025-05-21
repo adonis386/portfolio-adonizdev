@@ -9,8 +9,9 @@ export const translations = {
     biography: {
       title: 'Adonis González',
       subtitle: 'Desarrollador Web Especializado',
-      description: 'Especializado en el desarrollo de sistemas web únicos y personalizados. Mi enfoque se centra en crear soluciones web robustas y eficientes, combinando tecnologías modernas con las mejores prácticas de desarrollo.',
+      description: 'Especializado en el desarrollo de sistemas web únicos y personalizados, con enfoque en integración de IA y LLM. Mi enfoque se centra en crear soluciones web robustas y eficientes, combinando tecnologías modernas con las mejores prácticas de desarrollo.',
       skills: {
+        aiServices: 'Servicios de IA',
         webDev: 'Desarrollo Web',
         backend: 'Backend',
         uiux: 'UX/UI',
@@ -49,8 +50,9 @@ export const translations = {
     biography: {
       title: 'Adonis González',
       subtitle: 'Specialized Web Developer',
-      description: 'Specialized in developing unique and custom web systems. My focus is on creating robust and efficient web solutions, combining modern technologies with best development practices.',
+      description: 'Specialized in developing unique and custom web systems, with a focus on AI and LLM integration. My focus is on creating robust and efficient web solutions, combining modern technologies with best development practices.',
       skills: {
+        aiServices: 'AI Services',
         webDev: 'Web Development',
         backend: 'Backend',
         uiux: 'UX/UI',

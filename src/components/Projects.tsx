@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaReact, FaPython, FaDatabase, FaTelegram, FaWhatsapp, FaInstagram, FaPhp, FaQrcode } from 'react-icons/fa';
-import { SiDjango, SiTailwindcss, SiJsonwebtokens, SiNextdotjs, SiFastapi, SiFirebase, SiMysql, SiBootstrap } from 'react-icons/si';
+import { FaReact, FaPython, FaDatabase, FaTelegram, FaWhatsapp, FaInstagram, FaPhp, FaQrcode, FaRobot } from 'react-icons/fa';
+import { SiDjango, SiTailwindcss, SiJsonwebtokens, SiNextdotjs, SiFastapi, SiFirebase, SiMysql, SiBootstrap, SiOpenai } from 'react-icons/si';
 import { useLanguage } from '../context/LanguageContext';
 import { OptimizedImage } from './OptimizedImage';
 
@@ -38,6 +38,21 @@ const Projects = () => {
   });
 
   const projects: Project[] = [
+    {
+      id: 5,
+      title: "PC Builder AI Assistant",
+      description: "Asistente inteligente para construcción de PCs que utiliza IA para recomendar componentes compatibles basados en el presupuesto y necesidades del usuario. Incluye comparación de precios, análisis de rendimiento y guía paso a paso para el ensamblaje.",
+      technologies: [
+        { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
+        { name: "OpenAI", icon: SiOpenai, color: "text-green-500" },
+        { name: "React", icon: FaReact, color: "text-cyan-400" },
+        { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-400" },
+        { name: "AI Integration", icon: FaRobot, color: "text-purple-500" }
+      ],
+      imageUrl: "/cgt.webp",
+      demoUrl: undefined,
+      sourceUrl: undefined
+    },
     {
       id: 4,
       title: "Sistema QR - Telven Comunicaciones",
